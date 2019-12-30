@@ -11,7 +11,9 @@ const ResultsItem = ({ id, image = "", releaseDate = "", title = "Image Title", 
             <h3>{title}</h3>
             <p>{genre}</p>
         </figcaption>
-        <p>{releaseDate}</p>
+        <div>
+            <p className="result-item-year">{releaseDate.slice(0, 4)}</p>
+        </div>
         </div>
     </article>
 );

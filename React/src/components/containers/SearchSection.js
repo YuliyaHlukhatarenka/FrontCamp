@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 class ResearchSection extends Component {
   state = {
-    searchStr: '',
+    searchStr: this.props.searchStr,
   };
 
   changeStateValue = evt => {
@@ -15,7 +15,7 @@ class ResearchSection extends Component {
     }
   };
 
-  searchButtonHandler = evt => {
+  searchButtonHandler = () => {
     this.props.searchByString(this.state.searchStr);
   }
 
@@ -40,7 +40,8 @@ class ResearchSection extends Component {
           <input
             type="text"
             name="search"
-            value={this.props.searchStr}
+            defaultValue={this.props.searchStr}
+            value={this.searchStr}
             onChange={this.changeStateValue}
             onKeyPress={this.searchEnterHandler}
           />

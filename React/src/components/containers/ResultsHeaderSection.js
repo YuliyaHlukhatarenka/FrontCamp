@@ -1,15 +1,19 @@
 import React, { Component } from "react";
 
 class ResultsHeaderSection extends Component {
+  changeSorting = (evt) => {
+    this.props.changeSorting(evt.target.value);
+  }
+
   render() {
     let btn_release_date_color;
     let btn_rating_color;
-    if ( this.props.sortBy === "title" ) {
+    if ( this.props.sortBy === "release_date" ) {
       btn_release_date_color = "red-button";
       btn_rating_color = "grey-button";
     } else {
-      btn_rating_color = "grey-button";
-      btn_release_date_color = "red-button";
+      btn_rating_color = "red-button";
+      btn_release_date_color = "grey-button";
     }
     return (
       <div className="results-header-section">
@@ -18,8 +22,8 @@ class ResultsHeaderSection extends Component {
           </div>
           <div className="filter-section">
               <label>SORT BY</label>
-              <button className={btn_release_date_color}>RELEASE DATE</button>
-              <button className={btn_rating_color}>RATING</button>
+              <button className={btn_release_date_color} onClick={this.changeSorting} value='release_date'>RELEASE DATE</button>
+              <button className={btn_rating_color} onClick={this.changeSorting} value='vote_count'>RATING</button>
           </div>
       </div>
     )
