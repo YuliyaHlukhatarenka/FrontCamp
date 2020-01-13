@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 
+import { connect } from 'react-redux';
+import { getData, changeSearchFilter, changeSortFilter, changeSearchString } from '../../actions';  
+
 class ResearchSection extends Component {
   state = {
     searchStr: this.props.searchStr,
@@ -20,10 +23,11 @@ class ResearchSection extends Component {
   }
 
   changeSearchByFilter = (evt) => {
-    this.props.changeSearchByFilter(evt.target.value);
+    this.props.changeSearchFilter(evt.target.value);
   }
 
   render() {
+    console.log(this.props.data);
     let btn_title_color;
     let btn_genre_color;
     if ( this.props.searchBy === "title" ) {
@@ -58,4 +62,12 @@ class ResearchSection extends Component {
 }
 
 
-export default ResearchSection;
+export default connect(
+  state => ({
+    data: state.filmList.data,
+  }),
+  {
+    getData,
+    changeSearchFilter,
+  }
+)(ResearchSection);
