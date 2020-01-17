@@ -10,7 +10,8 @@ import {
 
 import dataService from '../services/getDataService';
 
-export const getData = ({ searchStr, searchBy, sortBy }) => {
+export const getData = ( searchStr, searchBy, sortBy ) => {
+    console.log('here');
     return dispatch => {
         dispatch(getDataStarted());
         dispatch(changeSearchString(searchStr));
