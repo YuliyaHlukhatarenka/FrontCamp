@@ -1,0 +1,140 @@
+{
+    "id": "0",
+    "source": {
+        "id": "abc-news",
+        "name": "ABC News"
+    },
+    "author": "The Associated Press",
+    "title": "Naval Academy probes possible 'white power' gesture at game",
+    "description": "",
+    "url": "https://abcnews.go.com/US/wireStory/naval-academy-probes-white-power-gesture-game-67746528",
+    "urlToImage": "https://s.abcnews.com/images/US/WireAP_60a40fb0dc4348d99b96b9b7f440e682_16x9_992.jpg",
+    "publishedAt": "2019-12-15T23:27:00Z",
+    "content": "The U.S. Naval Academy has appointed an officer to conduct an internal investigation into possible white power hand gestures flashed by students during a broadcast before the Army-Navy football game, an academy spokeswoman said Sunday.\r\nBased on findings of t… [+1828 chars]"
+}
+{
+    "id": "1",
+    "source": {
+        "id": "abc-news",
+        "name": "ABC News"
+    },
+    "author": "AYA BATRAWY Associated Press",
+    "title": "Amnesty raises to 304 number of Iranians killed in protests",
+    "description": "",
+    "url": "https://abcnews.go.com/International/wireStory/amnesty-raises-304-number-iranians-killed-protests-67752081",
+    "urlToImage": "https://s.abcnews.com/images/International/WireAP_09112827ad7b49acad7d5145e3fff9e9_16x9_992.jpg",
+    "publishedAt": "2019-12-16T12:09:42Z",
+    "content": "DUBAI, United Arab Emirates -- \r\nAmnesty International said Monday that at least 304 people were killed in last month's anti-government protests in Iran, a significantly higher number than what the rights group had reported previously. \r\nThe protests, which l… [+1972 chars]"
+}
+{
+    "id": "2",
+    "source": {
+        "id": "abc-news",
+        "name": "ABC News"
+    },
+    "author": "Morgan Winsor",
+    "title": "Florida issues Amber Alert for 2 young children missing in Jacksonville",
+    "description": "",
+    "url": "https://abcnews.go.com/US/florida-issues-amber-alert-young-children-missing-jacksonville/story?id=67750775",
+    "urlToImage": "https://s.abcnews.com/images/US/police-gty-er-190801_hpMain_16x9_992.jpg",
+    "publishedAt": "2019-12-16T11:13:35Z",
+    "content": "Authorities are desperately searching for two young children who disappeared over the weekend in Jacksonville, Florida.\r\nBraxton Williams, 6, and his sister Bri'ya Williams, 5, were last seen playing in front of their residence in Jacksonville's Paradise Vill… [+1031 chars]"
+}
+{
+    "id": "3",
+    "source": {
+        "id": "abc-news",
+        "name": "ABC News"
+    },
+    "author": "The Associated Press",
+    "title": "Lawsuit: Paternity test falsely ID'd Baltimore man as father",
+    "description": "",
+    "url": "https://abcnews.go.com/Weird/wireStory/lawsuit-paternity-test-falsely-idd-baltimore-man-father-67751109",
+    "urlToImage": "null",
+    "publishedAt": "2019-12-16T10:45:47Z",
+    "content": "BALTIMORE -- \r\nA Baltimore man is suing over a take-home paternity test he says incorrectly indicated he was the father of a 1-year-old girl.\r\nNnanaka Nwofor wants the Ohio company that conducted the DNA test to pay $75,000 for the cost of supporting the chil… [+1323 chars]"
+}
+{
+    "id": "4",
+    "source": {
+        "id": "abc-news",
+        "name": "ABC News"
+    },
+    "author": "Kelly Terez, Mark Osborne",
+    "title": "'Start Here': Democrats in swing districts facing pressure ahead of impeachment vote",
+    "description": "",
+    "url": "https://abcnews.go.com/US/start-here-democrats-swing-districts-facing-pressure-ahead-impeachment/story?id=67746228",
+    "urlToImage": "https://s.abcnews.com/images/US/impeachment-trial-01-gty-jc-191213_hpMain_16x9_992.jpg",
+    "publishedAt": "2019-12-16T10:01:49Z",
+    "content": "It's Monday, Dec. 16, 2019. Let's start here.\r\n1. Consequential vote\r\nAs Wednesday's House floor vote on impeachment approaches, some Democrats in key swing districts are still weighing whether to support the two articles against President Donald Trump.\r\n\"Dem… [+3728 chars]"
+}
+{
+    "id": "5",
+    "source": {
+        "id": "abc-news",
+        "name": "ABC News"
+    },
+    "author": "STEVE DOUGLAS AP Sports Writer",
+    "title": "Chess grandmaster becomes No. 1 in fantasy soccer",
+    "description": "",
+    "url": "https://abcnews.go.com/Sports/wireStory/chess-grandmaster-fantasy-soccer-67750629",
+    "urlToImage": "https://s.abcnews.com/images/Sports/WireAP_bb8b6493caeb408b955bb1efb19f77b5_16x9_992.jpg",
+    "publishedAt": "2019-12-16T09:18:05Z",
+    "content": "Magnus Carlsen is a No. 1 player in both reality and fantasy.\r\nThe world chess champion from Norway is showing he has a flair for another game by moving to the top of the standings in Fantasy Premier League, an online soccer competition played by more than 7 … [+1290 chars]"
+}
+{
+    "id": "6",
+    "source": {
+        "id": "abc-news",
+        "name": "ABC News"
+    },
+    "author": "The Associated Press",
+    "title": "Snowboarder caught in Utah avalanche dies",
+    "description": "",
+    "url": "https://abcnews.go.com/US/wireStory/snowboarder-caught-utah-avalanche-dies-67750361",
+    "urlToImage": "null",
+    "publishedAt": "2019-12-16T09:14:42Z",
+    "content": "A 45-year-old snowboarder was killed Sunday after he was caught in an avalanche that he unintentionally triggered and was buried, according to the Utah Avalanche Center.\r\nThe male snowboarder left Canyons Village in Park City via a back-country exit gate at t… [+739 chars]"
+}
+{
+    "id": "7",
+    "source": {
+        "id": "abc-news",
+        "name": "ABC News"
+    },
+    "author": "The Associated Press",
+    "title": "Royalty, EU, US delegations attend Battle of Bulge ceremony",
+    "description": "",
+    "url": "https://abcnews.go.com/International/wireStory/royalty-eu-us-delegations-attend-battle-bulge-ceremony-67750461",
+    "urlToImage": "https://s.abcnews.com/images/International/WireAP_fa4c78227f9d4f68aea7cfa65f790c9c_16x9_992.jpg",
+    "publishedAt": "2019-12-16T09:06:52Z",
+    "content": "BASTOGNE, Belgium -- \r\nRoyalty, U.S. and European Union top officials are attending ceremonies to mark the 75th anniversary of one of the most important battles in World War II the Battle of the Bulge, which stopped Adolf Hitler's last-ditch offensive to turn… [+1098 chars]"
+}
+{
+    "id": "8",
+    "source": {
+        "id": "abc-news",
+        "name": "ABC News"
+    },
+    "author": "ALAN FRAM Associated Press",
+    "title": "Five aides to party-switching House lawmaker resign",
+    "description": "",
+    "url": "https://abcnews.go.com/Politics/wireStory/aides-party-switching-house-lawmaker-resign-67748501",
+    "urlToImage": "https://s.abcnews.com/images/Politics/WireAP_f07ebcadb3624b5d91aff4983f38c793_16x9_992.jpg",
+    "publishedAt": "2019-12-16T03:09:00Z",
+    "content": "WASHINGTON -- \r\nFive aides to a House Democrat who plans to become a Republican are resigning, saying his party switch does not align with the values we brought to this job when we joined his office.\"\r\nThe staffers wrote the letter on Sunday, a day after a Re… [+2323 chars]"
+}
+{
+    "id": "9",
+    "source": {
+        "id": "abc-news",
+        "name": "ABC News"
+    },
+    "author": "The Associated Press",
+    "title": "Mexico: 50 bodies among remains at farm outside Guadalajara",
+    "description": "",
+    "url": "https://abcnews.go.com/International/wireStory/mexico-50-bodies-remains-farm-guadalajara-67746060",
+    "urlToImage": "null",
+    "publishedAt": "2019-12-15T23:56:00Z",
+    "content": "MEXICO CITY -- \r\nHuman remains discovered last month at a farm outside the city of Guadalajara have been confirmed as belonging to at least 50 people, authorities in Mexico's west-central state of Jalisco reported. \r\nJalisco state prosecutors said recovery wo… [+1210 chars]"
+}
