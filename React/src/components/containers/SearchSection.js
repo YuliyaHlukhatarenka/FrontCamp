@@ -1,32 +1,33 @@
 import React, { Component } from "react";
+import { connect } from 'react-redux';
+import { getData, changeSearchFilter } from '../../actions';
+import { Redirect } from 'react-router-dom';
 
-class ResearchSection extends Component {
+class SearchSection extends Component {
   state = {
-    searchStr: this.props.searchStr,
+    str: this.props.searchStr,
+    isSearchButtonPressed: false,
   };
 
-  changeStateValue = evt => {
-      this.setState({ searchStr: evt.target.value });
-  };
-  
   searchEnterHandler = evt => {
     if (evt.key === 'Enter') {
-      this.props.searchByString(this.state.searchStr);
+      this.getDataFromServer();
     }
   };
 
-  searchButtonHandler = () => {
-    this.props.searchByString(this.state.searchStr);
-  }
-
-  changeSearchByFilter = (evt) => {
-    this.props.changeSearchByFilter(evt.target.value);
+  getDataFromServer = () => {
+    this.props.getData(this.state.str, this.props.searchBy, this.props.sortBy);
+    this.setState({isSearchButtonPressed: true});
   }
 
   render() {
+  //   if (this.props.searchStr != '') {
+  //     this.getDataFromServer();
+  // }
+    if (this.state.isSearchButtonPressed == true) return <Redirect to={`/search/${this.state.str}`} />; 
     let btn_title_color;
     let btn_genre_color;
-    if ( this.props.searchBy === "title" ) {
+    if (this.props.searchBy === "title") {
       btn_title_color = "red-button";
       btn_genre_color = "grey-button";
     } else {
@@ -40,16 +41,15 @@ class ResearchSection extends Component {
           <input
             type="text"
             name="search"
-            defaultValue={this.props.searchStr}
-            value={this.searchStr}
-            onChange={this.changeStateValue}
+            value={this.state.str}
+            onChange={e => this.setState({ str: e.target.value })}
             onKeyPress={this.searchEnterHandler}
           />
-          <button className="search-button" onClick={this.searchButtonHandler}>SEARCH</button>
+          <button className="search-button" onClick={this.getDataFromServer}>SEARCH</button>
           <div className="results-header-section__filter-section">
             <label>SEARCH BY</label>
-            <button className={btn_title_color} onClick={this.changeSearchByFilter} value='title'>TITLE</button>
-            <button className={btn_genre_color} onClick={this.changeSearchByFilter} value='genres'>GENRE</button>
+            <button className={btn_title_color} onClick={e => this.props.changeSearchFilter(e.target.value)} value='title'>TITLE</button>
+            <button className={btn_genre_color} onClick={e => this.props.changeSearchFilter(e.target.value)} value='genres'>GENRE</button>
           </div>
         </div>
       </div>
@@ -57,5 +57,15 @@ class ResearchSection extends Component {
   }
 }
 
-
-export default ResearchSection;
+export default connect(
+  (state) => ({
+    searchStr: state.searchString.searchString,
+    data: state.filmList.data,
+    searchBy: state.searchFilter.searchBy,
+    sortBy: state.sortFilter.sortBy,
+  }),
+  {
+    getData,
+    changeSearchFilter,
+  }
+)(SearchSection);

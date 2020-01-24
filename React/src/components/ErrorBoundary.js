@@ -12,7 +12,7 @@ class ErrorBoundary extends Component {
   
     render() {
       if (this.state.hasError) {
-        return <p>too many results!</p>;
+        return <p>Error happens!</p>;
       }
       return this.props.children; 
     }
