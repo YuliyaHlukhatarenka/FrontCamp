@@ -1,0 +1,7 @@
+<div class="login-section">
+    <img [src]="imgPath">
+    <div>
+        <button *ngIf="userLoggedIn" (click)="login()">LogOut</button>
+        <button *ngIf="!userLoggedIn" (click)="login()">Login</button>
+    </div>
+</div>

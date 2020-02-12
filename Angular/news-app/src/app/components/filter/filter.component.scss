@@ -1,0 +1,15 @@
+.filters-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
+
+    .filter-by-text-input {
+        width: 200px;
+    }
+    select {
+        width: 150px;
+    }
+    button {
+        width: 150px;
+    }
+}

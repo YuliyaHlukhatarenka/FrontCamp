@@ -1,0 +1,17 @@
+ul {
+    padding: 0 0;
+    li {
+        list-style: none;
+        display: grid;
+        grid-template-columns: 150px auto 10% 15%;
+        grid-gap: 2%;
+        img {
+            width: 100%;
+            height: auto;
+        }
+        button {
+            width: 70px;
+            margin: 5px 0;
+        }
+    }
+}

@@ -1,0 +1,36 @@
+<div class="title-section">
+    <h2>{{activePage}}</h2>
+</div>
+<div class="from-wrapper">
+    <form [formGroup]="articleForm">
+        <div class="form-column">
+            <label> Heading </label><br />
+            <input type="text" formControlName="title"><br />
+
+            <label>Short description</label><br />
+            <input type="text" formControlName="description"><br />
+
+            <label>Content</label><br />
+            <input type="text" formControlName="content"><br />
+        </div>
+        <div class="form-column">
+            <label>Image
+                <input class="input-radio" type="radio" name="url" value="url" checked>
+                <input class="input-radio" type="radio" name="file" value="file">
+            </label><br />
+            <input type="text" formControlName="urlToImage"><br />
+
+            <label> Date </label><br />
+            <input type="text" formControlName="publishedAt"><br />
+
+            <label> Author </label><br />
+            <input type="text" formControlName="author"><br />
+
+            <label> Source URL </label><br />
+            <input type="text" formControlName="sourceUrl" readonly="readonly"><br />
+
+            <button type="submit" [disabled]="!articleForm.valid" (click)="onSubmit()">Save</button>
+            <button (click)="onCancel()">Cancel</button>
+        </div>
+    </form>
+</div>

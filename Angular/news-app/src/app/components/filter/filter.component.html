@@ -1,0 +1,15 @@
+<div class="title-section">
+    <h2>{{title}}</h2>
+</div>
+<div class="filters-section">
+    <select (change)="selectSource($event)">
+        <option>{{selectedSource}}</option>
+        <option *ngFor="let source of sources; index as i;" [value]="source.id" [id]="i">{{source.id}}</option>
+    </select>
+    <input class="filter-by-text-input" type="text" (keyup.enter)="filterNewsByText($event)" placeholder="type text..." />
+    <div>
+        <input type="checkbox" id="createdByMe" (click)="filterCreatedByMe($event)" [checked]="isChecked">
+        <label for="createdByMe">Only created By me</label>
+    </div>
+    <button (click)="addNewArticle()">Add Article</button>
+</div>
