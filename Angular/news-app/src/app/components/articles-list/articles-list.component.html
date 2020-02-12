@@ -1,0 +1,17 @@
+<app-filter (applyFilterByText)="applyFilterByText($event)" (applyCreatedByMe)="applyCreatedByMe($event)"></app-filter>
+<div>
+    <ul>
+        <li *ngFor="let article of articles | filterByText: filterBy; index as i">
+            <img [src]="article.urlToImage" (click)="openArticlePage(i)">
+            <div (click)="openArticlePage(i)">
+                <p>{{article.title}}</p>
+                <p>{{article.description}}</p>
+            </div>
+            <p>{{article.author}}</p>
+            <div>
+                <button *ngIf="article.author === userLogin" (click)="onEdit(i)">Edit</button><br/>
+                <button *ngIf="article.author === userLogin" (click)="onDelete(i)">Delete</button>
+            </div>
+        </li>
+    </ul>
+</div>

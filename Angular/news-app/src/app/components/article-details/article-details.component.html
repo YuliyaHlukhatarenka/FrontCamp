@@ -1,0 +1,18 @@
+<div  *ngIf="article" class="title-section">
+    <h2>{{article.source.name}}</h2>
+</div>
+<div *ngIf="article" class="article-detail-section">
+    <img [src]="article.urlToImage">
+    <div>
+        <p>{{article.title}}</p>
+        <p>{{article.description}}</p>
+        <p>{{article.publishedAt}}</p>
+        <p>{{article.author}}</p>
+        <p>{{article.content}}</p>
+    </div>
+    <div>
+        <button *ngIf="article.author === userLogin" (click)="onEdit()">Edit</button><br/>
+        <button *ngIf="article.author === userLogin" (click)="onDelete()">Delete</button><br/>
+        <button (click)='onOpenAll()'>All news</button>
+    </div>
+</div>

@@ -1,0 +1,13 @@
+.article-detail-section {
+    display: grid;
+    grid-template-columns: 200px auto 20%;
+    grid-gap: 3%;
+    img {
+        width: 100%;
+        height: auto;
+    }
+    button {
+        width: 70px;
+        margin: 5px 0;
+    }
+}

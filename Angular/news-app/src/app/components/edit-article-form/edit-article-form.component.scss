@@ -1,0 +1,22 @@
+.from-wrapper {
+    form {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 600px;
+        margin: 0 auto;
+        input {
+            width: 200px;
+            margin: 2px 0 8px;
+        }
+        .input-radio {
+            width: 20px;
+        }
+        button {
+            width: 70px;
+            margin: 5px 5px;
+        }
+        .form-column {
+            margin: 0 auto;
+        }
+    }
+}
