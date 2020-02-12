@@ -27,6 +27,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 - press login ( it is not real login, because it is not required by the task ). You have to  login to prepoluate Author while article creation.
 
 ## done marked as '+' , not done as '-'
+Task1:
 1.	+ Make a source name, e.g BBC as a heading, after you choose the one from the list. If the source is your own database, hide source name or display the name you choose for your portal.
 2.	+ List of sources from NewsAPI, ad in first task. After you choose one or another from dropdown, the news-articles list updates according to the source. Source Name also updates. 
 - It would be a plus if you will add an opton like ‘all sources’, when all news from all the sources will be shown without selecting any specific.
@@ -47,6 +48,17 @@ This is Create/Edit page, which is working with your API, that you’ve done on 
 4.	+ Date is prepolulated whith current date when create OR set automatically based on the time when article is saved.
 5.	+ Author may be prepoluated by the one who is Logged in.
 6.	+ Here you can set the URL name, that will be used for routing. E.g Heading is ‘Upcoming Minsk Events’, the url will be ‘upcoming-minsk-events’. The field is also mandatory, otherwise you will have to generate url for your article.
+
+Task2:
+1.	+ Add two additional configurations if angular.json:
+    a.	For “serve” with AOT 
+    b.	For “build” with prod mode but without AOT 
+2.	+ Create most of the components according to the mockup, make some template styling.
+3.	+ Add mock data, one for source list, one for the newslist (just and array of nock objects, representing news). Display it on page using directives *ngFor, component interactions 
+ +- use @Input and @Output in another place because I used Store (@Input for passing data to a news-item, and @Output for passing event from the ‘Load More’ button). 
+4. + Add routing. It should be possible to go to the specific article page, to ‘edit’ and to the ‘create’ pages.
+5. + Done all of the above: all components, all routes, all buttons. No need to bind to any real API –for example ‘Save’ button may just use console.log(‘Saved’). 
+
 
 
 
