@@ -59,6 +59,18 @@ Task2:
 4. + Add routing. It should be possible to go to the specific article page, to ‘edit’ and to the ‘create’ pages.
 5. + Done all of the above: all components, all routes, all buttons. No need to bind to any real API –for example ‘Save’ button may just use console.log(‘Saved’). 
 
+Task3:
+1.	+ Re-write cross-component communication to services, where it is necessary.
+2.	+ Add default Angular pipes (e.g date pipe) where available. Add filtering by your custom @Pipe. 
+3.	+ Update “Edit” component with change detection strategy – “on push”.
+4.	- Re-write ngFor in template with ComponentFactory.
+5.	- Re-write one component with usage of Angular Elements.
+6.	+ Get list of sources from News API, get list of news based on selected source. Add type that GET method will return (this.http.get<type>(‘url...’)), create interfaces for that. At least create an interface for Article. Make a request to get full data when view the whole Article.
+7.	+ Create a Form and it’s model (Reactive approach) for Create / Update page. Make required fileds obligatory. Without them form should not be valid, and the button should be disabled (<button [disabled]=”form.invalid”>Save</button> - something like that). Prepopulate form fileds if it’s Update mode.
+8.	+ Everything works, Form allows to create and update your ‘local’ news, you can delete them. Add any other features you consider useful for your app. 
+9.	- Bonus: Try to deploy FE  on any platform (Heroku, GitHub-pages etc.), and ensure it works from other device/computer. 
+
+
 
 
 
