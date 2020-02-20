@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { IArticle } from '../../shared/entities//article';
 import { IAppState } from '../../store/state/app.state';
@@ -12,7 +12,8 @@ import { LOGGED_USER_DETAILS } from '../../shared/constants';
 @Component({
   selector: 'app-edit-article-form',
   templateUrl: './edit-article-form.component.html',
-  styleUrls: ['./edit-article-form.component.scss']
+  styleUrls: ['./edit-article-form.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class EditArticleFormComponent implements OnInit {
   private author: string;
