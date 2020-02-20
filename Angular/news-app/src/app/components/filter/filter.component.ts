@@ -17,7 +17,7 @@ export class FilterComponent implements OnInit {
   @Output() applyCreatedByMe: EventEmitter<Event> = new EventEmitter();
   public sources: ISource[];
   public articles: IArticle[];
-  public title: string;
+  public title = '';
   public selectedSource: string;
 
   public isChecked: boolean;

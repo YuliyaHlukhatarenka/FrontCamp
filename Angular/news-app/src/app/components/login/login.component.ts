@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { IAppState } from '../../store/state/app.state';
 import * as StoreActions from '../../store/actions';
-import { LOGGED_USER_DETAILS }from '../../shared/constants'; 
+import { LOGGED_USER_DETAILS } from '../../shared/constants';
 
 @Component({
   selector: 'app-login',

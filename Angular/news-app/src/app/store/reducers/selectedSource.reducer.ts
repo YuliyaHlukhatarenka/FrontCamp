@@ -1,6 +1,6 @@
 import { SelectedSourceActions } from '../actions';
 import { ActionTypes } from '../constants';
-import { SELECT_SOURCE_DEFAULT } from '../../shared/constants'
+import { SELECT_SOURCE_DEFAULT } from '../../shared/constants';
 
 export function selectedSourceReducer(state: string = SELECT_SOURCE_DEFAULT, action: SelectedSourceActions): string {
   switch (action.type) {
