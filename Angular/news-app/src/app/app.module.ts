@@ -8,9 +8,14 @@ import { FilterComponent } from './components/filter/filter.component';
 import { ArticlesListComponent } from './components/articles-list/articles-list.component';
 import { ArticleDetailsComponent } from './components/article-details/article-details.component';
 import { EditArticleFormComponent } from './components/edit-article-form/edit-article-form.component';
-import { StoreModule, select } from '@ngrx/store';
-import { sourcesReducer, selectedSourceReducer, createdByMeReducer, userReducer } from '../app/store/reducers';
-import { articlesReducer } from '../app/store/reducers';
+import { StoreModule } from '@ngrx/store';
+import {
+  sourcesReducer,
+  selectedSourceReducer,
+  createdByMeReducer,
+  userReducer,
+  articlesReducer,
+  ownArticlesReducer } from '../app/store/reducers';
 import { EffectsModule } from '@ngrx/effects';
 import { ActionsEffects } from './store/effects/actions.effects';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
@@ -18,7 +23,6 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { HttpClientModule } from '@angular/common/http';
 import { FilterByTextPipe } from './shared/pipes/filter-by-text.pipe';
-import { ownArticlesReducer } from './store/reducers/ownArticles.reducer';
 
 @NgModule({
   declarations: [
@@ -48,7 +52,7 @@ import { ownArticlesReducer } from './store/reducers/ownArticles.reducer';
       maxAge: 25
     })
   ],
-  providers: [],
+  providers: [HttpClientModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

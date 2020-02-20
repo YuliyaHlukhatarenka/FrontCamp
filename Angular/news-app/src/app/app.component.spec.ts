@@ -1,15 +1,35 @@
 import { TestBed, async } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
+import { LoginComponent } from './components/login/login.component';
+import { StoreModule } from '@ngrx/store';
+import {
+  sourcesReducer,
+  selectedSourceReducer,
+  createdByMeReducer,
+  userReducer,
+  articlesReducer,
+  ownArticlesReducer } from './store/reducers';
+import { ReactiveFormsModule } from '@angular/forms';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [
-        RouterTestingModule
+        RouterTestingModule,
+        ReactiveFormsModule,
+        StoreModule.forRoot({
+          sources: sourcesReducer,
+          articles: articlesReducer,
+          ownArticles: ownArticlesReducer,
+          selectedSource: selectedSourceReducer,
+          createdByMe: createdByMeReducer,
+          userLogin: userReducer
+        })
       ],
       declarations: [
-        AppComponent
+        AppComponent,
+        LoginComponent
       ],
     }).compileComponents();
   }));
@@ -30,6 +50,6 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('news-app app is running!');
+    expect(compiled.querySelector('div button').textContent).toContain('Login');
   });
 });

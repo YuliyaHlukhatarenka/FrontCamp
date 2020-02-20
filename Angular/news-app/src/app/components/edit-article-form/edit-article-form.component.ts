@@ -44,6 +44,7 @@ export class EditArticleFormComponent implements OnInit {
     if (this.router.routerState.snapshot.url === '/create') {
       this.activePage = 'create';
       this.articleForm.patchValue({
+        title: '',
         author: `${this.author}`,
         publishedAt: new Date().toISOString().slice(0, 19),
         sourceUrl: LOGGED_USER_DETAILS.sourceUrl,
