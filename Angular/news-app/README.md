@@ -70,6 +70,14 @@ Task3:
 8.	+ Everything works, Form allows to create and update your ‘local’ news, you can delete them. Add any other features you consider useful for your app. 
 9.	- Bonus: Try to deploy FE  on any platform (Heroku, GitHub-pages etc.), and ensure it works from other device/computer. 
 
+Unit test:
+1.	+ Add Unit tests for Angular application
+2.	+ Add reporter and generate report
+3.	+- Increase code coverage to 30%+
+4.	- Integrate reportportal.io
+5.	+ Additional – add e2e test
+
+
 
 
 
